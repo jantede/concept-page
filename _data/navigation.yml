@@ -1,0 +1,9 @@
+links:
+- name: SmartBox
+  link: /smartbox/
+- name: Presse
+  link: /blog/
+- name: Über Uns
+  link: /about/
+- name: Kontakt
+  link: /contact/

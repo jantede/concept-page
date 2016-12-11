@@ -1,0 +1,61 @@
+---
+title: Kontakt
+heading: Hinterlasse uns eine Nachricht
+subtitle: Wir freuen uns, von dir zu hören!
+map:
+  latitude: 53.079574
+  longitude: 8.806302
+  content_html: "<strong>Concept AG</strong><br>Am Wall 384<br>28195 Bremen, Deutschland<br>"
+  zoom: 13
+---
+
+<section class="diagonal">
+	<div class="container">
+		<form action="/contact-success/" method="post" class="contact-form">
+			<input type="hidden" name="cc_emails[]" value="info@concept-ag.me" />
+
+			<div class="halves">
+				<div>
+					<label for="name">Vorname</label>
+					<input type="text" name="first-name" id="first-name" placeholder="Max" />
+				</div>
+
+				<div>
+					<label for="name">Nachname</label>
+					<input type="text" name="last-name" id="last-name" placeholder="Mustermann" />
+				</div>
+			</div>
+
+			<label for="email">E-Mail-Adresse</label>
+			<input type="email" name="email" id="email" placeholder="max.mustermann@email.de" required />
+
+			<label for="message">Nachricht</label>
+			<textarea name="message" id="message" placeholder="Hallo, ..."></textarea>
+
+			<input type="submit" value="Nachricht abschicken" />
+		</form>
+	</div>
+</section>
+
+<section class="diagonal map">
+	<div id="gmap_canvas"></div>
+</section>
+
+<section class="diagonal">
+	<div class="container halves aligned-top">
+		<div>
+			<h3>Adresse</h3>
+			<address>Am Wall 384<br />28195 Bremen, Deutschland</address>
+		</div>
+		<div>
+			<h3>Email</h3>
+			<p><a href="mailto:info@concept-ag.me">info@concept-ag.me</a></p>
+		</div>
+	</div>
+</section>
+
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+<script type='text/javascript'>
+	window.mapData = {{ page.map | jsonify }};
+</script>
+<script src="{{ site.baseurl }}/js/map.js"></script>

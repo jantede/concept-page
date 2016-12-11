@@ -1,0 +1,71 @@
+title: Concept AG
+url: "http://localhost.localdomain//" # is not required as Jekyll will generate automatically
+baseurl: # either reason as for url
+google_analytics_key:
+google_maps_javascript_api_key: AIzaSyBmXKR64XKLLSqxZCDIiojwmgWhCYc2jpg
+disqus_shortname: 
+
+# Default description in social shares for the jekyll-seo-tag gem
+description: Concept AG. Wir haben uns auf die Optimierung handelsüblicher Nutzgegenstände spezialisiert.
+
+# Author details for the jekyll-seo-tag gem
+author: 
+  name: "Concept AG"
+  email: info@concept-ag.com
+  twitter: # twitter username without the @ symbol
+
+# Social details for the jekyll-seo-tag gem
+social:
+  name: Concept AG
+  links:
+    - https://www.facebook.com/ConceptAG
+
+collections:
+  staff_members:
+    output: false
+  clients:
+    output: true
+
+paginate: 10
+paginate_path: "/blog/:num/"
+permalink: pretty
+
+jekyll-archives:
+  enabled:
+    - "categories"
+
+gems:
+  - "jekyll-feed"
+  - "jekyll-seo-tag"
+  - "jekyll-paginate"
+  - "jekyll-archives"
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "clients"
+    values:
+      layout: "client"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "index.html"
+      type: "pages"
+    values:
+      layout: "default"
+
+# -----------
+# CloudCannon
+
+social_icons:
+  - Facebook
+  - Instagram
+  - Twitter
