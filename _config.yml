@@ -1,6 +1,6 @@
 title: Concept AG
-url: "http://localhost.localdomain//" # is not required as Jekyll will generate automatically
-baseurl: # either reason as for url
+url: "http://www.concept-ag.me/" 
+baseurl: # not required, is in root dir
 google_analytics_key:
 google_maps_javascript_api_key: AIzaSyBmXKR64XKLLSqxZCDIiojwmgWhCYc2jpg
 disqus_shortname: 
@@ -11,7 +11,7 @@ description: Concept AG. Wir haben uns auf die Optimierung handelsüblicher Nutz
 # Author details for the jekyll-seo-tag gem
 author: 
   name: "Concept AG"
-  email: info@concept-ag.com
+  email: info@concept-ag.me
   twitter: # twitter username without the @ symbol
 
 # Social details for the jekyll-seo-tag gem
